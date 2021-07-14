@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            display: flexbox;
+            border: solid 3px red;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script>
+        function myFunction() {
+    var x = document.getElementById("mySelect").value;
+    
+    document.getElementById("heading1").innerHTML ="Item Name : "+ x;
+    document.getElementById("heading2").innerHTML="Quantity : "+counter.value();
+            
+            
+  }
+    </script>
+</head>
+
+<body>
+    <h3>Order </h3>
+    Product:
+    <select id="mySelect">
+        <option>Pepsi</option>
+        <option>Maggi</option>
+    </select>
+    <div>
+         <h5>Quantity</h5>
+         <p id="demo"></p>
+        <button onclick="onClick(event);" id="button1">-</button>
+       
+        <button onclick="onClick(event)" id="button2">+</button>
+
+        <span id="result">&nbsp;&nbsp;&nbsp;&nbsp;</span><br><br>
+        <button onclick="myFunction()" id="button2">Submit Order</button>
+
+    </div>
+
+    <script src="js/app.js"></script>
+    <H1>Order Details</H1>
+    <h3 id="heading1"></h3>
+    <h3 id="heading2"></h3>
+    <h3 id="heading3"></h3>
+</body>
+
+</html>
